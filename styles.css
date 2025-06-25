@@ -19,7 +19,7 @@ body {
   border: #282828 solid 2px;
   border-radius: 10%;
   position: relative;
-  animation: moving 20s linear infinite;
+  animation: moving 30s linear infinite;
   margin-top: 100px;
 }
 
