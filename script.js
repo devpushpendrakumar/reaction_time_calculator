@@ -3,7 +3,7 @@ const colorChanger = () => {
   console.log(hidden);
   if (hidden) {
     box.classList.add("hidden");
-    const timeDelay = randomNumber(0, 2000);
+    const timeDelay = randomNumber(0, 1500);
     setTimeout(() => {
       void box.offsetWidth;
       box.classList.remove("hidden");
@@ -26,10 +26,10 @@ const colorChanger = () => {
   }
 };
 
-let startTime;
+let startTime = Date.now();
 let endTime;
 let responseTime;
-let hidden = true;
+let hidden = false;
 
 const box = document.getElementById("box");
 box.addEventListener("click", colorChanger);
