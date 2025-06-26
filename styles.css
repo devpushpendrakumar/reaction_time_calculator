@@ -7,25 +7,33 @@
 }
 body {
   width: 90%;
-  height: 100vh;
+  height: 100%;
   padding-top: 20px;
   margin: auto;
 }
 
+#container {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+}
+
 #box {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   background-color: #0b0050;
   border: #282828 solid 2px;
   border-radius: 10%;
-  position: relative;
-  animation: moving 20s linear infinite;
+  position: absolute;
+  top: 75px;
+  left: 175px;
   margin-top: 100px;
 }
 
 #time-board {
-  margin-top: 100px;
+  margin-top: 150px;
   font-weight: bold;
   word-spacing: 1px;
   font-size: 1.2rem;
@@ -37,8 +45,11 @@ body {
 .color-change {
   animation: color 1s linear;
 }
+.hidden {
+  display: none;
+}
 
-@keyframes moving {
+/* @keyframes moving {
   0% {
     left: 50%;
   }
@@ -54,7 +65,7 @@ body {
   100% {
     left: 50%;
   }
-}
+} */
 @keyframes color {
   0% {
     background-color: yellow;
